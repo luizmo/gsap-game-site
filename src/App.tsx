@@ -1,6 +1,7 @@
 import Hero from "./components/Hero/Hero"
 import About from "./components/About/About"
 import Navbar from "./components/Navbar/Navbar"
+import Features from "./components/Features/Features"
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
       <Navbar/>
       <Hero/> 
       <About/>
+      <Features/>
     </main>
   )
 }
