@@ -1,11 +1,11 @@
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from 'gsap/all'
-import AnimatedTitle from '../AnimatedTitle/AnimatedTitle'
+import { AnimatedTitle } from '../AnimatedTitle'
 
 gsap.registerPlugin(ScrollTrigger)
 
-const About = () => {
+export const About = () => {
   useGSAP(() => {
     const clipAnimation = gsap.timeline({
       scrollTrigger: {
@@ -55,4 +55,3 @@ const About = () => {
   )
 }
 
-export default About

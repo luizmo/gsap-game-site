@@ -1,5 +1,4 @@
-
-const RoundedCorners = () => {
+export const RoundedCorners = () => {
   return (
     <svg
       className="invisible absolute size-0"
@@ -28,5 +27,3 @@ const RoundedCorners = () => {
     </svg>
   )
 }
-
-export default RoundedCorners

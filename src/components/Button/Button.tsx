@@ -7,7 +7,7 @@ interface ButtonProps {
   rightIcon?: ReactElement | ReactNode,
   containerClass?: string,
 }
-const Button = ({ id, title, leftIcon, rightIcon, containerClass }: ButtonProps) => {
+export const Button = ({ id, title, leftIcon, rightIcon, containerClass }: ButtonProps) => {
   return (
     <button id={id} className={`group relative z-10 w-fit cursor-pointer overflow-hidden rounded-full bg-violet-50 px-7 py-3 text-black ${containerClass}`}>
       {leftIcon}
@@ -18,5 +18,3 @@ const Button = ({ id, title, leftIcon, rightIcon, containerClass }: ButtonProps)
     </button>
   )
 }
-
-export default Button

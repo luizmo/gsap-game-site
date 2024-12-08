@@ -3,12 +3,12 @@ import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from 'gsap/all'
 import { TiLocationArrow } from 'react-icons/ti'
-import Button from '../Button/Button'
+import { Button } from '../Button'
 
 //enable scroll plugin
 gsap.registerPlugin(ScrollTrigger)
 
-const Hero = () => {
+export const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(1)
   const [hasClicked, setHasClicked] = useState(false)
 
@@ -169,5 +169,3 @@ const Hero = () => {
     </div>
   )
 }
-
-export default Hero

@@ -7,7 +7,7 @@ interface AnimatedTitleProps {
   sectionId?: string
 }
 
-const AnimatedTitle = ({ title, containerClass, sectionId }:Readonly<AnimatedTitleProps>) => {
+export const AnimatedTitle = ({ title, containerClass, sectionId }:Readonly<AnimatedTitleProps>) => {
   const containerRef = useRef(null)
 
   useEffect(() => {
@@ -50,5 +50,3 @@ const AnimatedTitle = ({ title, containerClass, sectionId }:Readonly<AnimatedTit
     </div>
   )
 }
-
-export default AnimatedTitle

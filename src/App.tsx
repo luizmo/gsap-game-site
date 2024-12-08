@@ -1,8 +1,4 @@
-import Hero from "./components/Hero/Hero"
-import About from "./components/About/About"
-import Navbar from "./components/Navbar/Navbar"
-import Features from "./components/Features/Features"
-import Story from "./components/Story/Story"
+import { About, Contact, Features, Footer, Hero, Navbar, Story } from "./components"
 
 const App = () => {
   return (
@@ -12,6 +8,8 @@ const App = () => {
       <About/>
       <Features/>
       <Story/>
+      <Contact/>
+      <Footer/>
     </main>
   )
 }
